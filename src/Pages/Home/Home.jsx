@@ -3,38 +3,29 @@ import './Home.css'
 const Home = () => {
   return (
     <body>
-    <header>
-        <h1>DambarGM</h1>
-        <nav>
-            <ul>
-                <li><a href="about">About</a></li>
-                <li><a href="portfolio">Portfolio</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="content">
-        <div id="about" class="section">
-            <h2>About Me</h2>
-            <p>This is a brief description of yourself.</p>
+    <div class="portfolio">
+        <div class="navbar">
+                <nav>DambarGM</nav>
+                <ul>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="projects.html" >Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="/about">Contact</a></li>
+                    <li><a href="DAMBAR-SING-GHARTI-CV.pdf" target="blank" >Download CV</a></li>
+                </ul>
         </div>
+        <div class="home">
+            <img src="dambargm_img.png" alt="" />
+            <div class="home-data">
+                <h1>Future Developer∞</h1>
+                <h2>Learning on 'How to render You'</h2>
+                <a href="https://github.com/GShix " class="button" >GitHub Profile</a>
+            </div>
 
-        <div id="portfolio" class="section">
-            <h2>Portfolio</h2>
-            {/* <!-- Add your portfolio projects here --> */}
         </div>
-
-        <div id="contact" class="section">
-            <h2>Contact Me</h2>
-            <p>Email: your@email.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </div>
+        
     </div>
 
-    <footer>
-        <p>&copy; 2023 DambarGM</p>
-    </footer>
 </body>
   )
 }

@@ -1,112 +1,124 @@
-/* Reset some default styles */
-body, h1, h2, p, ul, li {
+*{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #1a065b;
 }
-
-/* Apply a background color and some basic styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+.navbar{
+    /* background-color: aqua; */
+    height: auto;
+    width: 100%;
 }
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+.navbar img{
+    width: 400px;
+    padding: 0px 30px 0px 20px;
+    cursor: pointer;
 }
-
-header h1 {
-    font-size: 2rem;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
+.navbar ul {
+    float: right;
     margin-right: 20px;
 }
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
+.navbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 5px;
+}
+.navbar ul li{
+    padding: 0px 10px;
+    border-radius: 3px;
+    /* color: #1a065b; */
+    text-transform: uppercase;
     font-weight: bold;
-}
 
-#content {
-    margin: 20px;
 }
+navbar ul li a.active, a:hover{
+    color: rgb(244, 118, 7);
+    transition: .5s;
 
-.section {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
-.section h2 {
-    font-size: 1.5rem;
+.checkbtn{
+    font-size: 30px;
+    color: rgb(244, 118, 7);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
-
-footer {
-    background-color: #333;
-    color: #fff;
+#check{
+    display: none;
+}
+@media screen and (max-width: 952px) {
+    .navbar img{
+        width: 320px;
+    }
+    
+}
+@media screen and (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(244, 118, 7);
+        top: 80px;
+        left: -100%;
+        text-align:left;
+        transition: all .5s;
+    }
+    .navbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .navbar ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        columns: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+.home{
+    padding: 50px;
+    justify-content: center;
     text-align: center;
-    padding: 1rem 0;
+    align-items: center;
 }
-
-/* Responsive CSS */
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    nav ul li {
-        margin-right: 10px;
-    }
-
-    .section {
-        padding: 15px;
-    }
-
-    .section h2 {
-        font-size: 1.2rem;
-    }
-
-    footer {
-        padding: 0.5rem 0;
-    }
+.home img {
+    /* padding-left: 10px; */
 }
-
-@media screen and (max-width: 600px) {
-    header h1 {
-        font-size: 1.2rem;
-    }
-
-    nav ul li {
-        margin-right: 5px;
-    }
-
-    .section {
-        padding: 10px;
-    }
-
-    .section h2 {
-        font-size: 1.1rem;
-    }
-
-    footer {
-        padding: 0.3rem 0;
-    }
+.home-data{s
+    padding-right: 10vw;
+    /* padding-top: 200px; */
+   text-align: center;
+}
+.home-data h1{
+    font-size: 50px;
+    color: rgb(244, 118, 7);
+}
+.home-data h2{
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.button{
+    background: rgb(248, 128, 7);
+    
+    border-radius: 4px;
+    padding: 4px;
+    transition: all 2000ms ease-in-out;
+}
+.button:hover{
+    background: rgb(248, 128, 7);
+       color: white;
+        transition: .2s;
+        text-co
+    
 }
